@@ -13,3 +13,6 @@ set(SRC
     )
 add_library(symengine_f90 ${SRC})
 target_link_libraries(symengine_f90 ${SYMENGINE_LIBRARIES})
+
+install(TARGETS symengine_f90 DESTINATION lib)
+# install(TARGETS symengine_f90.mod DESTINATION include)
